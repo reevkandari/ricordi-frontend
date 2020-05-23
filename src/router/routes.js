@@ -6,7 +6,7 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/front.vue'), meta: "poor"},
       { path: '/login', component: () => import('pages/login.vue'), meta: "poor"},
-      { path: '/about-this-project', component: () => import('pages/help.vue'), meta: "rich"},
+      //{ path: '/about-this-project', component: () => import('pages/help.vue'), meta: "rich"},
       { path: '/signup', component: () => import('pages/signup.vue'), meta: "poor"},
       { path: '/forgot/:code?', component: () => import('pages/forgot.vue'), meta: "poor"},
       { path: '/confirm/:code?', component: () => import('pages/confirm.vue'), 

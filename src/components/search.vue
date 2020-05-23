@@ -30,7 +30,7 @@ export default {
                     usersArray.push({
                         label:value.name, 
                         avatar:this.$options.filters.avatarImage(value.avatar),
-                        //'https://ricordi.rivilabs.com/media/'+value.avatar, 
+                        //'https://WePlace.rivilabs.com/media/'+value.avatar, 
                         sublabel:'@'+ value.slug
                     });
                 });*/

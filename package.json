@@ -1,8 +1,8 @@
 {
-  "name": "ricordi-front-end",
+  "name": "WePlace-front-end",
   "version": "1.0.0",
   "description": "Record your life",
-  "productName": "Ricordi",
+  "productName": "WePlace",
   "cordovaId": "org.cordova.quasar.app",
   "author": "Rishabh Kandari",
   "private": true,

@@ -53,8 +53,8 @@
         </div>
       </div>
       <!-- User PRofile-->
-      <div class="col-lg-6 col-xl-6 col-12 q-pt-sm row">
-        <showStories class="col-12" :userId=profile._id />
+      <div class="col-lg-6 col-xl-6 col-12 q-pt-sm">
+        <showStories  :userId=profile._id />
       </div>
   
     </div>

@@ -23,7 +23,7 @@
         {{item.title}}
       </div>
       <div class="full-width row q-pt-xs postContent">
-        <p  v-html="$options.filters.text2html(item.content)" />
+        {{item.content}}
       </div>
       <!-- PostContent-->
     </div>
@@ -136,9 +136,9 @@
     computed: {
       noMorePostMessage() {
         if (this.home) {
-          return "That's all for now. Follow some people to keep yourself updated with their stories";
+          return "That's all for now. Follow some people to keep yourself updated with their postings";
         } else {
-          return "That's all we have for now. No more stories to show."
+          return "That's all we have for now. No more postings to show."
         }
       }
     },

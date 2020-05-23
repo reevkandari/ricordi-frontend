@@ -1,13 +1,13 @@
 <template>
   <q-page class="flex row justify-center">
 
-  <div v-if="$q.platform.is.desktop" class="col-lg-6 row justify-center bg-yellow-6">
+  <div v-if="$q.platform.is.desktop" class="col-lg-6 row justify-center bg-blue-3">
   <div class="col-10 text-black q-mt-lg">
     <ul>
-      <li> Keep a diary of your everyday life</li>
-      <li> Ready from other people's diaries. </li>
-      <li> Make Mistakes, Learn from them</li>   
-      <li> Demo login with username : reevkandari, password: awesome </li>                
+      <li> Post Job Listings for your company</li>
+      <li> Follow various recruiters </li>
+      <li> Get Job Updates</li>   
+      <li> And finally ! WORK ! </li>                
     </ul>
   </div>
   </ul>

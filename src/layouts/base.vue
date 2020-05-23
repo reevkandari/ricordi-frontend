@@ -2,9 +2,9 @@
   <q-layout view="lHh Lpr lFf">  
   <q-layout-header>
 
-    <q-toolbar color="indigo-7">
+    <q-toolbar color="red-9">
       <q-btn  v-if="loggedIn" flat round dense @click="drawer = !drawer" icon="menu" />
-      <q-toolbar-title> Ricordi </q-toolbar-title>
+      <q-toolbar-title> WePlace </q-toolbar-title>
       <div v-if="$q.platform.is.desktop && loggedIn" 
     class="relative position col-8 flex row float-right q-ml-xl q-pl-xl">
     <q-field class="col-12 float-right bg-white round-borders">
@@ -16,14 +16,15 @@
 
   <!-- Left Side Drawer -->
   <q-layout-drawer :width=drawerWidth v-if="loggedIn" side="left" v-model="drawer">
-        <div class="flex bg-red-6  text-white justify-center q-pt-md q-pb-xs">
+        <div class="flex bg-yellow-6  text-white justify-center q-pt-md q-pb-xs">
             <img class="shadow-3" :width=avatarSize :height=avatarSize
-            style="border-radius:360px;border:2px solid white" 
+            style="border-radius:360px;border:4px solid blue" 
             :src="profile.avatar | avatarImage"/>
-            <div class="text-center q-ma-xs">
+
+            <div class="full-width text-center q-ma-xs text-black">
               <div class="capitalize q-title">{{profile.name}}</div>
               <div class="q-text-light q-body-2">@{{profile.slug}}</div>
-        </div>
+            </div>            
         </div>
 
 
@@ -34,7 +35,6 @@
       </q-item>
     </q-list>
     <div class="absolute-bottom text-center text-white bg-indigo">
-      Made by Rishabh at RiviLabs
     </div>
   </q-layout-drawer>
 
@@ -72,7 +72,7 @@ export default {
         {label:"Account", icon:"person",to:"/account"},
         {label:"Settings", icon:"settings",to:"/settings"},
         {label:"Log-Out", icon:"exit_to_app" ,to:"/logout"},
-        {label:"About This Project",  icon:"help",  to:"/about-this-project"}        
+        //{label:"About This Project",  icon:"help",  to:"/about-this-project"}        
       ]      
     }
   },

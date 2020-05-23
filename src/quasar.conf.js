@@ -32,7 +32,7 @@ module.exports = function (ctx) {
       proxy: {
         // proxy all requests starting with /api to jsonplaceholder
         '/api': {
-          target: 'https://wisedumb.rivilabs.com/api/',
+          target: 'http://159.65.153.4:3030/',
           changeOrigin: true,
           pathRewrite: {
             '^/api/': ''

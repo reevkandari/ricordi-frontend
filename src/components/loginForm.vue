@@ -24,15 +24,11 @@
     label="Log-In" @click="login()" :loading="loading">
     <q-spinner-dots slot="loading" />
     </q-btn>
+
     <div class="text-center q-mb-md">
-            <router-link to="/forgot" class="router-link"> Forgot Password ? </router-link>
+            <router-link to="/signup" class="router-link">New Here? Create an Account</router-link>
     </div>
-    <div class="text-center q-mb-md">
-            <router-link to="/signup" class="router-link">Naye Aaye ho? Create an Account</router-link>
-    </div>
-    <div class="text-center q-mb-md">
-            <router-link to="/confirm" class="router-link">Verify your Email</router-link>
-    </div>    
+
   </div>
 
 </template>

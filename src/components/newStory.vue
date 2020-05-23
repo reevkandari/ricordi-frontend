@@ -3,21 +3,21 @@
       <q-input float-label="Write a short title(Optional)" maxlength="75"
       v-model="story.title" type="textarea" hide-underline class="q-pb-sm q-ma-sm full-width"/> 
 
-      <q-input class="q-pb-sm q-ma-sm full-width " float-label="Write your story, Be descriptive"
+      <q-input class="q-pb-sm q-ma-sm full-width " float-label="Write your JD, Be descriptive"
        hide-underline v-model=story.content type="textarea"  rows="4"/> 
 
       <q-datetime class="q-pb-sm q-ma-sm full-width"  
-      placeholder="Today"  hide-underline format="Do MMM, YYYY" v-model="story.date"  />        
-       
+      placeholder="Last Date"  hide-underline format="Do MMM, YYYY" v-model="story.date"  />        
+<!--       
       <q-checkbox  class="q-pb-sm q-ma-sm full-width"
       v-model="story.private"  label="Keep this Private for now " /> 
-
+-->
        <q-alert class="q-pb-sm q-ma-sm text-center" color="red" v-if="newStoryError" >
          There has been an error, please try again. If the issue persists, contact us
         </q-alert> 
 
       <q-btn class="q-pb-sm q-ma-sm full-width" size="md" @click="createNewStory" 
-      label="Post Story"  color="red"/>
+      label="Submit Post"  color="red"/>
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default {
           var res = await this.$axios.post('newStory',{newStory:this.story});
           if (res.status==201){
               this.$router.push('/home');
-              this.notify('Your story was successfully posted','positive');
+              this.notify('Your post was successfully submitted','positive');
               this.$emit('created');
               this.resetNewStory();
           }

@@ -66,7 +66,7 @@
       newStoryPlaceholder() {
         var name = this.$store.state.user.profile.name.split(/\s(.+)/)[0];
         name = name.charAt(0).toUpperCase() + name.slice(1);
-        return 'Hi ' + name + ' ! How was your day?';
+        return 'Hi ' + name + ' ! Post something Here';
       }
     }
   }

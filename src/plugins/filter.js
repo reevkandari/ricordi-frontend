@@ -31,6 +31,6 @@ function avatarImage(value){
     if(typeof value === 'object') return value;
     if (value && value){
         if(value.includes(':')) return value;
-        else return "https://ricordi.zivi.in/media/"+value;
+        else return "https://weplace.laxmichitfund.in/media/"+value;
     }else return '../assets/emptyProfile.jpg'
 }

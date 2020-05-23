@@ -37,7 +37,7 @@
                 <q-spinner-dots slot="loading"/>
             </q-btn>
             <div class="text-center q-mb-md">
-                <router-link to="/login" class="router-link">Account hai pehle se? Login karlo</router-link>
+                <router-link to="/login" class="router-link">Have and account? Login Here</router-link>
             </div>            
         </div>
     </div>
